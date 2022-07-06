@@ -43,45 +43,76 @@ html {
 
 
 .sezione-main {
-border: var(--bordo);
-height: calc(100vh - 5.625rem);
-background-color: ;
+    border: var(--bordo);
+    height: calc(100vh - 5.625rem);
+    background-color: ;
 
 }
 
-.comandi-canzoni{
+.comandi-canzoni {
     border: var(--bordo);
     height: 5.625rem;
     background-color: #282828;
 }
 
-.row{
+.row {
     display: flex;
     border: var(--altbordo);
     height: 100%;
 }
 
-.col-nav{
+.col-nav {
     flex-basis: 14.5rem;
     height: 100%;
     background-color: #000000;
     border: var(--bordo);
 }
 
-.col-libreria{
+.col-libreria {
     flex-basis: 0;
     flex-grow: 1;
     border: var(--3bordo);
 }
 
-.upgrade{
+.upgrade {
     height: 5.625rem;
     border: var(--bordo);
     position: fixed;
     width: 100%;
+    background-color: rgba(8, 11, 18, 0.7)
 }
 
-.libreria{
+.libreria {
     height: 100%;
     border: var(--3bordo);
+    background-color: #141922;
+    padding-top: 5.625rem;
+    overflow: auto;
+    color: darkmagenta;
+    font-size: 15rem;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background-color: white;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* background: #C8C8C8;  */
+    border-radius: 10px;
+    box-shadow: inset 5px 7px 5px grey;
+    
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #C8C8C8;
 }
