@@ -1,0 +1,52 @@
+/* O muse, o alto ingegno, or m'aiutate;
+ o mente che scrivesti ciò ch'io vidi,
+  qui si parrà la tua nobilitate */
+
+
+
+/* REGOLE DI RESET  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ROOT  */
+
+:root {
+    --bordo: 5px solid red
+}
+
+
+
+
+
+
+.sezione-centrale {
+border: var(--bordo);
+height: calc(100vh - 5.625rem);
+
+}
+
+.comandi-canzoni{
+    border: var(--bordo);
+    height: 5.625rem;
+}
