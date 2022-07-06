@@ -1,6 +1,6 @@
 /* O muse, o alto ingegno, or m'aiutate;
- o mente che scrivesti ciò ch'io vidi,
-  qui si parrà la tua nobilitate */
+o mente che scrivesti ciò ch'io vidi,
+qui si parrà la tua nobilitate */
 
 
 
@@ -10,7 +10,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    
 }
 
 
@@ -27,71 +27,19 @@ menu {
 
 html {
     font-family: 'Open Sans', sans-serif;
+    color: darkmagenta;
 }
 
 /* ROOT  */
 
-:root {
+/* :root {
     --bordo: 5px solid red;
     --altbordo: 5px solid magenta;
     --3bordo: 5px solid cyan;
-}
+} */
 
 
-
-
-
-
-.sezione-main {
-    border: var(--bordo);
-    height: calc(100vh - 5.625rem);
-    background-color: ;
-
-}
-
-.comandi-canzoni {
-    border: var(--bordo);
-    height: 5.625rem;
-    background-color: #282828;
-}
-
-.row {
-    display: flex;
-    border: var(--altbordo);
-    height: 100%;
-}
-
-.col-nav {
-    flex-basis: 14.5rem;
-    height: 100%;
-    background-color: #000000;
-    border: var(--bordo);
-}
-
-.col-libreria {
-    flex-basis: 0;
-    flex-grow: 1;
-    border: var(--3bordo);
-}
-
-.upgrade {
-    height: 5.625rem;
-    border: var(--bordo);
-    position: fixed;
-    width: 100%;
-    background-color: rgba(8, 11, 18, 0.7)
-}
-
-.libreria {
-    height: 100%;
-    border: var(--3bordo);
-    background-color: #141922;
-    padding-top: 5.625rem;
-    overflow: auto;
-    color: darkmagenta;
-    font-size: 15rem;
-}
-
+/* SCROLL BAR  */
 
 /* width */
 ::-webkit-scrollbar {
@@ -115,4 +63,86 @@ html {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #C8C8C8;
+}
+
+
+
+
+
+.sezione-main {
+    border: var(--bordo);
+    height: calc(100vh - 5.625rem);
+    background-color: ;
+
+}
+
+.comandi-canzoni {
+    border: var(--bordo);
+    height: 5.625rem;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    border: var(--altbordo);
+    height: 100%;
+}
+
+.col-nav {
+    flex-basis: 14.5rem;
+    height: 100%;
+    background-color: #000000;
+    border: var(--bordo);
+}
+
+.nav-main{
+    padding-top: 1.25rem;
+    padding-left: 1.25rem;
+}
+
+.col-libreria {
+    flex-basis: 0;
+    flex-grow: 1;
+    border: var(--3bordo);
+}
+
+.upgrade {
+    height: 5.625rem;
+    border: var(--bordo);
+    position: fixed;
+    width: calc(100% - 14.5rem);
+    background-color: rgba(8, 11, 18, 0.7);
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.bottone{
+    text-align: end;
+}
+
+.libreria {
+    height: 100%;
+    border: var(--3bordo);
+    background-color: #141922;
+    padding-top: 5.625rem;
+    overflow: auto;
+    color: white;
+    font-size: 15rem;
+}
+
+
+
+
+.uno,.tre{
+    flex-basis: 14.5rem;
+border: 2px solid cyan;
+}
+
+.due{
+    flex-grow: 1;
+    flex-basis: 0;
+    border: 2px solid goldenrod;
 }
