@@ -32,7 +32,9 @@ html {
 /* ROOT  */
 
 :root {
-    --bordo: 5px solid red
+    --bordo: 5px solid red;
+    --altbordo: 5px solid magenta;
+    --3bordo: 5px solid cyan;
 }
 
 
@@ -40,13 +42,46 @@ html {
 
 
 
-.sezione-centrale {
+.sezione-main {
 border: var(--bordo);
 height: calc(100vh - 5.625rem);
+background-color: ;
 
 }
 
 .comandi-canzoni{
     border: var(--bordo);
     height: 5.625rem;
+    background-color: #282828;
+}
+
+.row{
+    display: flex;
+    border: var(--altbordo);
+    height: 100%;
+}
+
+.col-nav{
+    flex-basis: 14.5rem;
+    height: 100%;
+    background-color: #000000;
+    border: var(--bordo);
+}
+
+.col-libreria{
+    flex-basis: 0;
+    flex-grow: 1;
+    border: var(--3bordo);
+}
+
+.upgrade{
+    height: 5.625rem;
+    border: var(--bordo);
+    position: fixed;
+    width: 100%;
+}
+
+.libreria{
+    height: 100%;
+    border: var(--3bordo);
 }
